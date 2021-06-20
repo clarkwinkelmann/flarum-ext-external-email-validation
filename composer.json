@@ -1,0 +1,60 @@
+{
+    "name": "clarkwinkelmann/flarum-ext-external-email-validation",
+    "description": "Validate email with a call to an external API",
+    "keywords": [
+        "flarum",
+        "integration",
+        "email",
+        "validation"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.0",
+        "guzzlehttp/guzzle": "^6.0||^7.0",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "flarum/testing": "^1.0"
+    },
+    "authors": [
+        {
+            "name": "Clark Winkelmann",
+            "homepage": "https://clarkwinkelmann.com/",
+            "email": "clark.winkelmann@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/clarkwinkelmann/flarum-ext-external-email-validation"
+    },
+    "autoload": {
+        "psr-4": {
+            "ClarkWinkelmann\\ExternalEmailValidation\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "External Email Validation",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-at",
+                "backgroundColor": "#684ba6",
+                "color": "#fff"
+            }
+        }
+    },
+    "scripts": {
+        "test": [
+            "@test:integration"
+        ],
+        "test:integration": "phpunit -c tests/phpunit.integration.xml",
+        "test:setup": "@php tests/integration/setup.php",
+        "test:server": "@php -S 0.0.0.0:8000 -t tests/fixtures"
+    },
+    "scripts-descriptions": {
+        "test": "Runs all tests.",
+        "test:integration": "Runs all integration tests.",
+        "test:setup": "Sets up a database for use with integration tests. Execute this only once."
+    }
+}
