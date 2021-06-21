@@ -26,7 +26,8 @@
         }
     ],
     "support": {
-        "source": "https://github.com/clarkwinkelmann/flarum-ext-external-email-validation"
+        "source": "https://github.com/clarkwinkelmann/flarum-ext-external-email-validation",
+        "forum": "https://discuss.flarum.org/d/27832"
     },
     "autoload": {
         "psr-4": {
@@ -42,6 +43,9 @@
                 "backgroundColor": "#684ba6",
                 "color": "#fff"
             }
+        },
+        "flagrow": {
+            "discuss": "https://discuss.flarum.org/d/27832"
         }
     },
     "scripts": {

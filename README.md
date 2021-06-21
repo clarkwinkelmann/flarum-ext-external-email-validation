@@ -48,3 +48,4 @@ Then you can run `composer test:setup` and `composer test` like regular Flarum i
 
 - [GitHub](https://github.com/clarkwinkelmann/flarum-ext-external-email-validation)
 - [Packagist](https://packagist.org/packages/clarkwinkelmann/flarum-ext-external-email-validation)
+- [Discuss](https://discuss.flarum.org/d/27832)
